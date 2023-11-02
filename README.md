@@ -35,19 +35,23 @@ The dataset comprises several CSV files, each serving a specific purpose:
 The following steps were followed to complete this project:
 
 ## Architecture
-<img></img>
+<img src="https://github.com/Vipinnnn/medication_errors_effects_data_analysis/assets/71926172/ed382f19-f0e0-45a7-8f04-e280fa20fa1b"></img>
 
 1. **Data Staging**: The CSV data was staged in an AWS S3 bucket for easy accessibility and data preparation.
-<img></img>
+<img src="https://github.com/Vipinnnn/medication_errors_effects_data_analysis/assets/71926172/ad00df51-d37c-4eca-9055-56c3f8c5d4f4"></img>
 
 2. **Data Cleaning and Transformation**: Lambda functions were implemented to clean and transform the data. Transformations included making age and weight formats consistent, dropping null and duplicate values. The cleaned data was stored in another S3 bucket for further processing.
-<img></img>
+<img src="https://github.com/Vipinnnn/medication_errors_effects_data_analysis/assets/71926172/537178ba-b0db-41a3-945e-89e8488b10d3"></img>
+<img src="https://github.com/Vipinnnn/medication_errors_effects_data_analysis/assets/71926172/8498c8d4-b6c1-41b4-a44a-b05972a61354"></img>
 
-3. **Data Warehousing**: The cleaned data was copied into a Redshift data warehouse for structured storage and efficient querying.
-<img></img>
+3. **Data Loading**: The cleaned data was copied into a Redshift data warehouse for structured storage and efficient querying.
+<img src="https://github.com/Vipinnnn/medication_errors_effects_data_analysis/assets/71926172/b132d683-2457-4a49-a811-b23598b662cd"></img>
 
-4. **Data Visualization**: For Visualization purpose I have used Tableau. Data from Amazon Redshift can be directly imported to Tableau Desktop(Enterprise version). Since I had Tableau public I couldn't use this feature so I have directly imported the cleaned csv files into Tableau and build Dashboard. These dashboards effectively conveyed insights obtained from the data.
-<img></img>
+4. **Data Visualization**: For Visualization purpose Tableau is used. Data from Amazon Redshift can be directly imported to Tableau Desktop(Enterprise version). Since this feature is not availabe on Tableau Public, the cleaned csv files are directly imported into Tableau and Dashboard is created. These dashboards effectively conveyed insights obtained from the data.
+
+<a href="https://public.tableau.com/views/mock_proj_dashboard/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link">Tableau Public Dashboard<a>
+
+<img src="https://github.com/Vipinnnn/medication_errors_effects_data_analysis/assets/71926172/4b8d52c9-5b28-40f9-8e70-39945bdb177c"></img>
 
 
 ## Conclusion
